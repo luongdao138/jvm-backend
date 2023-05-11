@@ -86,7 +86,7 @@
     "check-types": "tsc --pretty --noEmit",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "start": "nodemon",
+    "start": "node dist/index.js",
     "migration:run": "node dist/cli/migrate.js run",
     "migration:create": "typeorm migration:create",
     "openapi:sdk:front": "openapi -i ./jvm-client/docs/front-spec.json -o ./jvm-client/front -c axios --useOptions --exportSchemas true --indent 2 --request ./jvm-client/request/index.ts",
