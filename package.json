@@ -76,7 +76,6 @@
   },
   "scripts": {
     "watch": "tsc --watch --project tsconfig.build.json",
-    "prepare": "cross-env NODE_ENV=production yarn run build && husky install",
     "build": "rm -rf dist && tsc --project tsconfig.build.json",
     "serve": "node dist/index.js",
     "test": "jest",
